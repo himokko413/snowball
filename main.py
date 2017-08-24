@@ -58,7 +58,7 @@ async def on_message(message):
 
     if message.content.startswith('?hello'):
         msg = 'Ni hao, {0.author.mention}!'.format(message)
-    elif message.content.startswith('?healing'):
+    elif message.content.startswith('I need healing'):
         msg = 'Stop being a Genji, {0.author.mention}!'.format(message)
         await bot.send_message(message.channel, msg)
 
